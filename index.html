@@ -354,8 +354,7 @@
 
       
         
-          
-            <h1 id="序列式容器"><a href="#序列式容器" class="headerlink" title="序列式容器"></a>序列式容器</h1><table>
+          <h1 id="序列式容器"><a href="#序列式容器" class="headerlink" title="序列式容器"></a>序列式容器</h1><table>
 <thead>
 <tr>
 <th>容器</th>
@@ -469,194 +468,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>vector：动态数组；<br>deque：双向队列；<br>list：链表；</p>
-<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>(std::)容器类型&lt;数据类型&gt; 容器名称；（适用于vector,deque,list）<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;deque&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;list&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vct1;   <span class="comment">//定义一个空的int型vector，命名为vct1；</span></span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vct2(<span class="number">10</span>,<span class="number">29</span>);    <span class="comment">//定义一个名为vct2的int型vector，并加入10个值为29的元素；</span></span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vct3(vct2.begin(),vct2.end());</span><br><span class="line">    <span class="comment">//定义一个名为vct3的int型vector，并把[vct2.begin(),vct2.end())间的元素加入其中；</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>其他容器（deque,list）和其他数据类型（float,char等）同理；</p>
-<h2 id="迭代器函数"><a href="#迭代器函数" class="headerlink" title="迭代器函数"></a>迭代器函数</h2><h3 id="begin-end"><a href="#begin-end" class="headerlink" title="begin/end"></a>begin/end</h3><p>begin：容器内首元素的迭代器；（适用于vector,deque,list）<br>end：容器内尾元素的迭代器+1；（适用于vector,deque,list）<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;::iterator it;   <span class="comment">//定义一个vector的迭代器；</span></span><br><span class="line"><span class="keyword">for</span>(it=vct.begin(); it!=vct.end(); it++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;*it&lt;&lt;<span class="string">" "</span>; <span class="comment">//通过迭代器顺序输出vct中元素；</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="容量函数"><a href="#容量函数" class="headerlink" title="容量函数"></a>容量函数</h2><h3 id="size"><a href="#size" class="headerlink" title="size"></a>size</h3><p>容器的大小（容器中元素的个数）；（适用于vector,deque,list）<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vct.size(); <span class="comment">//得到vct的大小；</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="empty"><a href="#empty" class="headerlink" title="empty"></a>empty</h3><p>容器是否为空；（适用于vector,deque,list）<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">bool</span> flag=vct.empty();  <span class="comment">//用flag存储vct是否为空；</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="resize"><a href="#resize" class="headerlink" title="resize"></a>resize</h3><p>改变容器大小；（适用于vector,deque,list）<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vct.resize(<span class="number">10</span>); <span class="comment">//把vct大小改为10，保留前10个元素，若原大小&lt;10，用0补充多余部分；</span></span><br><span class="line">vct.resize(<span class="number">10</span>,<span class="number">29</span>);  <span class="comment">//与上一条语句的区别为：用29补充多余部分；</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="元素访问"><a href="#元素访问" class="headerlink" title="元素访问"></a>元素访问</h2><h3 id="front-back"><a href="#front-back" class="headerlink" title="front/back"></a>front/back</h3><p>front：首元素；（适用于vector,deque,list）<br>back：尾元素；（适用于vector,deque,list）<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=vct.front(),b=vct.back(); <span class="comment">//把vct的首，尾元素赋值给a，b；</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="中括号"><a href="#中括号" class="headerlink" title="中括号[]"></a>中括号[]</h3><p>下标；<strong>（适用于vector,deque）</strong><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;vct.size(); i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;vct[i]&lt;&lt;<span class="string">" "</span>;  <span class="comment">//像数组一样以下标访问元素；</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="调节器"><a href="#调节器" class="headerlink" title="调节器"></a>调节器</h2><h3 id="insert-erase"><a href="#insert-erase" class="headerlink" title="insert/erase"></a>insert/erase</h3><p>insert：插入元素；（适用于vector,deque,list）<br>erase：删除元素；（适用于vector,deque,list）<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vct.insert(it,<span class="number">10</span>);  <span class="comment">//在vct中迭代器it的位置插入元素10；</span></span><br><span class="line">vct.insert(it,<span class="number">10</span>,<span class="number">29</span>);   <span class="comment">//在it处插入10个29；</span></span><br><span class="line">vct1.insert(it,vct2.begin(),vct2.end());</span><br><span class="line"><span class="comment">//在it处插入迭代器[vct2.begin(),vct2.end())区间内所有元素；</span></span><br><span class="line"></span><br><span class="line">vct.erase(it);  <span class="comment">//删除迭代器it处的元素；</span></span><br><span class="line">vct.erase(it1,it2); <span class="comment">//删除迭代器[it1,it2)区间内所有元素；</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="push-back-pop-back-push-front-pop-front"><a href="#push-back-pop-back-push-front-pop-front" class="headerlink" title="push_back/pop_back/push_front/pop_front"></a>push_back/pop_back/push_front/pop_front</h3><p>push_back：容器最后加入元素；（适用于vector,deque,list）<br>pop_back：容器最后删除元素；（适用于vector,deque,list）<br>push_front：容器最前加入元素；<strong>（适用于deque,list）</strong><br>pop_front：容器最前删除元素；<strong>（适用于deque,list）</strong><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">vct.push_back(<span class="number">10</span>);  <span class="comment">//在vct尾部加一个元素10；</span></span><br><span class="line">vct.pop_back(); <span class="comment">//删除vct的最后一个元素；</span></span><br><span class="line"></span><br><span class="line">dq.push_front(<span class="number">10</span>);  <span class="comment">//在dq的头部加一个元素10；</span></span><br><span class="line">dq.pop_front(); <span class="comment">//删除dq的第一个元素；</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="clear"><a href="#clear" class="headerlink" title="clear"></a>clear</h3><p>清空容器；（适用于vector,deque,list）<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vct.clear();    <span class="comment">//删除掉vct中所有元素；</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="swap"><a href="#swap" class="headerlink" title="swap"></a>swap</h3><p>交换两个容器中的元素；（适用于vector,deque,list）<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vct1.swap(vct2);    <span class="comment">//交换vct1与vct2；</span></span><br></pre></td></tr></table></figure></p>
-<hr>
-<h1 id="容器适配器"><a href="#容器适配器" class="headerlink" title="容器适配器"></a>容器适配器</h1><table>
-<thead>
-<tr>
-<th>容器</th>
-<th>stack</th>
-<th>queue</th>
-<th>priority_queue</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>头文件</td>
-<td>&lt;stack&gt;</td>
-<td>&lt;queue&gt;</td>
-<td>&lt;queue&gt;</td>
-</tr>
-<tr>
-<td>empty</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>size</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>top</td>
-<td>√</td>
-<td>×</td>
-<td>√</td>
-</tr>
-<tr>
-<td>front</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-</tr>
-<tr>
-<td>back</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-</tr>
-<tr>
-<td>push</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>pop</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h1 id="关联容器"><a href="#关联容器" class="headerlink" title="关联容器"></a>关联容器</h1><table>
-<thead>
-<tr>
-<th>容器</th>
-<th>set</th>
-<th>multiset</th>
-<th>map</th>
-<th>multimap</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>头文件</td>
-<td>&lt;set&gt;</td>
-<td>&lt;set&gt;</td>
-<td>&lt;map&gt;</td>
-<td>&lt;map&gt;</td>
-</tr>
-<tr>
-<td>begin</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>end</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>size</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>empty</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>operator[]</td>
-<td>×</td>
-<td></td>
-<td>√</td>
-<td></td>
-</tr>
-<tr>
-<td>insert</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>erase</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>clear</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>swap</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>count</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>find</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>lower_bound</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>upper_bound</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-</tbody>
-</table>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/10/STL/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
