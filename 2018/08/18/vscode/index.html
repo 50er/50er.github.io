@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="教程," />
 
 
 
@@ -79,30 +79,31 @@
 
 
 
-<meta name="description" content="下载所需vscode插件  C/C++ Code Runner">
+<meta name="description" content="本文默认读者已经预装好了Visual Studio Code">
+<meta name="keywords" content="教程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows10配置vscode编译运行C&#x2F;C++环境">
 <meta property="og:url" content="http://yoursite.com/2018/08/18/vscode/index.html">
 <meta property="og:site_name" content="真新镇">
-<meta property="og:description" content="下载所需vscode插件  C/C++ Code Runner">
+<meta property="og:description" content="本文默认读者已经预装好了Visual Studio Code">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/images/vscode1.png">
-<meta property="og:image" content="http://yoursite.com/images/vscode2.png">
-<meta property="og:image" content="http://yoursite.com/images/vscode3.png">
-<meta property="og:image" content="http://yoursite.com/images/vscode4.png">
-<meta property="og:image" content="http://yoursite.com/images/vscode5.png">
-<meta property="og:image" content="http://yoursite.com/images/vscode6.png">
-<meta property="og:image" content="http://yoursite.com/images/vscode7.png">
-<meta property="og:image" content="http://yoursite.com/images/vscode8.png">
-<meta property="og:image" content="http://yoursite.com/images/vscode9.png">
-<meta property="og:image" content="http://yoursite.com/images/vscode10.png">
-<meta property="og:image" content="http://yoursite.com/images/vscode11.png">
-<meta property="og:image" content="http://yoursite.com/images/vscode12.png">
-<meta property="og:updated_time" content="2018-08-18T15:41:28.043Z">
+<meta property="og:image" content="http://yoursite.com/images/vscode/1.png">
+<meta property="og:image" content="http://yoursite.com/images/vscode/2.png">
+<meta property="og:image" content="http://yoursite.com/images/vscode/3.png">
+<meta property="og:image" content="http://yoursite.com/images/vscode/4.png">
+<meta property="og:image" content="http://yoursite.com/images/vscode/5.png">
+<meta property="og:image" content="http://yoursite.com/images/vscode/6.png">
+<meta property="og:image" content="http://yoursite.com/images/vscode/7.png">
+<meta property="og:image" content="http://yoursite.com/images/vscode/8.png">
+<meta property="og:image" content="http://yoursite.com/images/vscode/9.png">
+<meta property="og:image" content="http://yoursite.com/images/vscode/10.png">
+<meta property="og:image" content="http://yoursite.com/images/vscode/11.png">
+<meta property="og:image" content="http://yoursite.com/images/vscode/12.png">
+<meta property="og:updated_time" content="2018-08-21T02:33:58.337Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows10配置vscode编译运行C&#x2F;C++环境">
-<meta name="twitter:description" content="下载所需vscode插件  C/C++ Code Runner">
-<meta name="twitter:image" content="http://yoursite.com/images/vscode1.png">
+<meta name="twitter:description" content="本文默认读者已经预装好了Visual Studio Code">
+<meta name="twitter:image" content="http://yoursite.com/images/vscode/1.png">
 
 
 
@@ -315,6 +316,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -347,36 +370,17 @@
       
 
       
-        <h1 id="下载所需vscode插件"><a href="#下载所需vscode插件" class="headerlink" title="下载所需vscode插件"></a>下载所需vscode插件</h1><blockquote>
+        <p>本文默认读者已经预装好了<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a><br><a id="more"></a></p>
+<h1 id="下载安装MinGW-w64"><a href="#下载安装MinGW-w64" class="headerlink" title="下载安装MinGW-w64"></a>下载安装<a href="https://sourceforge.net/projects/mingw-w64/files/" target="_blank" rel="noopener">MinGW-w64</a></h1><p><img src="/images/vscode/1.png" alt="图1"><br>64位系统选项<br><img src="/images/vscode/2.png" alt="图2"><br>复制安装目录下的”bin”文件夹地址<br><img src="/images/vscode/3.png" alt="图3"><br>右键”此电脑”——“属性”——“高级系统设置”<br><img src="/images/vscode/4.png" alt="图4"><br>——“环境变量”<br><img src="/images/vscode/5.png" alt="图5"><br>选中Path，点击编辑<br><img src="/images/vscode/6.png" alt="图6"><br>点击新建选项<br><img src="/images/vscode/7.png" alt="图7"><br>把复制的地址粘贴进框后确定<br><img src="/images/vscode/8.png" alt="图8"></p>
+<h1 id="所需vscode插件"><a href="#所需vscode插件" class="headerlink" title="所需vscode插件"></a>所需vscode插件</h1><blockquote>
 <ul>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools" target="_blank" rel="noopener">C/C++</a></li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner" target="_blank" rel="noopener">Code Runner</a><a id="more"></a>
-</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner" target="_blank" rel="noopener">Code Runner</a></li>
 </ul>
 </blockquote>
-<h1 id="下载安装MinGW-w64"><a href="#下载安装MinGW-w64" class="headerlink" title="下载安装MinGW-w64"></a>下载安装<a href="https://sourceforge.net/projects/mingw-w64/files/" target="_blank" rel="noopener">MinGW-w64</a></h1><p><img src="/images/vscode1.png" alt="图1"></p>
-<p>64位系统选项</p>
-<p><img src="/images/vscode2.png" alt="图2"></p>
-<p>复制安装目录下的”bin”文件夹地址</p>
-<p><img src="/images/vscode3.png" alt="图3"></p>
-<p>右键”此电脑”——“属性”——“高级系统设置”</p>
-<p><img src="/images/vscode4.png" alt="图4"></p>
-<p>——“环境变量”</p>
-<p><img src="/images/vscode5.png" alt="图5"></p>
-<p>选中Path，点击编辑</p>
-<p><img src="/images/vscode6.png" alt="图6"></p>
-<p>点击新建选项</p>
-<p><img src="/images/vscode7.png" alt="图7"></p>
-<p>把复制的地址粘贴进框后确定</p>
-<p><img src="/images/vscode8.png" alt="图8"></p>
-<h1 id="更改用户设置"><a href="#更改用户设置" class="headerlink" title="更改用户设置"></a>更改用户设置</h1><p>打开vscode，点击左下角齿轮图标——“设置”</p>
-<p><img src="/images/vscode9.png" alt="图9"></p>
-<p>把以下代码复制进右边的框内<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    "code-runner.runInTerminal": true, //在内置终端运行</span><br><span class="line">    "code-runner.saveFileBeforeRun": true, //运行前保存</span><br><span class="line">    "code-runner.clearPreviousOutput": true, //运行前清除之前输出</span><br><span class="line">    "code-runner.executorMap": &#123; //调参</span><br><span class="line">        "c": "cd $dirWithoutTrailingSlash &amp;&amp; gcc $fileName -o $fileNameWithoutExt -std=c11 -lm&amp;&amp; ./$fileNameWithoutExt",</span><br><span class="line">        "cpp": "cd $dirWithoutTrailingSlash &amp;&amp; g++ -Wall $fileName -o $fileNameWithoutExt -std=c++11 -lm &amp;&amp; ./$fileNameWithoutExt"</span><br><span class="line">    &#125;,</span><br><span class="line">    "code-runner.preserveFocus": false, //运行时焦点不会跳回编辑器</span><br><span class="line">    "code-runner.ignoreSelection": true,</span><br><span class="line">    "explorer.confirmDelete": false,</span><br><span class="line">    "window.zoomLevel": 0, //忽略选择部分运行 </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="/images/vscode10.png" alt="图10"></p>
-<h1 id="完成测试"><a href="#完成测试" class="headerlink" title="完成测试"></a>完成测试</h1><p>写好代码，点击右上角三角形编译运行</p>
-<p><img src="/images/vscode11.png" alt="图11"></p>
-<p>运行成功</p>
-<p><img src="/images/vscode12.png" alt="图12"></p>
+<h1 id="更改用户设置"><a href="#更改用户设置" class="headerlink" title="更改用户设置"></a>更改用户设置</h1><p>打开vscode，点击左下角齿轮图标——“设置”<br><img src="/images/vscode/9.png" alt="图9"><br>把以下代码复制进右边的框内<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    "code-runner.runInTerminal": true, //在内置终端运行</span><br><span class="line">    "code-runner.saveFileBeforeRun": true, //运行前保存</span><br><span class="line">    "code-runner.clearPreviousOutput": true, //运行前清除之前输出</span><br><span class="line">    "code-runner.executorMap": &#123; //调参</span><br><span class="line">        "c": "cd $dirWithoutTrailingSlash &amp;&amp; gcc $fileName -o $fileNameWithoutExt -std=c11 -lm&amp;&amp; ./$fileNameWithoutExt",</span><br><span class="line">        "cpp": "cd $dirWithoutTrailingSlash &amp;&amp; g++ -Wall $fileName -o $fileNameWithoutExt -std=c++11 -lm &amp;&amp; ./$fileNameWithoutExt"</span><br><span class="line">    &#125;,</span><br><span class="line">    "code-runner.preserveFocus": false, //运行时焦点不会跳回编辑器</span><br><span class="line">    "code-runner.ignoreSelection": true,</span><br><span class="line">    "explorer.confirmDelete": false,</span><br><span class="line">    "window.zoomLevel": 0, //忽略选择部分运行 </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><img src="/images/vscode/10.png" alt="图10"></p>
+<h1 id="完成测试"><a href="#完成测试" class="headerlink" title="完成测试"></a>完成测试</h1><p>写好代码，点击右上角三角形编译运行<br><img src="/images/vscode/11.png" alt="图11"><br>运行成功<br><img src="/images/vscode/12.png" alt="图12"></p>
 
       
     </div>
@@ -391,6 +395,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/教程/" rel="tag"># 教程</a>
+          
+        </div>
       
 
       
@@ -512,7 +522,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -583,7 +593,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#下载所需vscode插件"><span class="nav-number">1.</span> <span class="nav-text">下载所需vscode插件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#下载安装MinGW-w64"><span class="nav-number">2.</span> <span class="nav-text">下载安装MinGW-w64</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更改用户设置"><span class="nav-number">3.</span> <span class="nav-text">更改用户设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#完成测试"><span class="nav-number">4.</span> <span class="nav-text">完成测试</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#下载安装MinGW-w64"><span class="nav-number">1.</span> <span class="nav-text">下载安装MinGW-w64</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#所需vscode插件"><span class="nav-number">2.</span> <span class="nav-text">所需vscode插件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更改用户设置"><span class="nav-number">3.</span> <span class="nav-text">更改用户设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#完成测试"><span class="nav-number">4.</span> <span class="nav-text">完成测试</span></a></li></ol></div>
             
 
           </div>
