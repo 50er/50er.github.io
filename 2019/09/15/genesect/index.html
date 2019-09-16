@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/16.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Pokemon,卡牌," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="卡组预览">
+<meta name="keywords" content="Pokemon,卡牌">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PTCGO-Legacy卡组介绍——雪虫">
+<meta property="og:url" content="http://yoursite.com/2019/09/15/genesect/index.html">
+<meta property="og:site_name" content="真新镇">
+<meta property="og:description" content="卡组预览">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/images/ptcg/genesect.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/ditto-triumphant-tm-17-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/smeargle-undaunted-ud-8-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/celebi-prime-triumphant-tm-92-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/genesect-ex-plasma-blast-plb-11-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/virizion-ex-plasma-blast-plb-9-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/jirachi-ex-plasma-blast-plb-60-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/mr.-mime-plasma-freeze-plf-47-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/bicycle-plasma-storm-pls-117-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/colress-machine-plasma-storm-pls-119-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/dual-ball-unleashed-ul-72-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/energy-retrieval-black-white-blw-92-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/escape-rope-plasma-storm-pls-120-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/junk-arm-triumphant-tm-87-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/level-ball-next-destinies-nxd-89-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/random-receiver-dark-explorers-dex-99-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/super-rod-noble-victories-nvi-95-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/switch-heartgold-soulsilver-hs-102-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/tool-scrapper-dragons-exalted-drx-116-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/town-map-boundaries-crossed-bcr-136-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/ultra-ball-dark-explorers-dex-102-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/skyarrow-bridge-next-destinies-nxd-91-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/colress-plasma-storm-pls-118-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/n-noble-victories-nvi-92-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/professor-juniper-black-white-blw-101-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/professor-oaks-new-theory-heartgold-soulsilver-hs-101-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/shadow-triad-plasma-freeze-plf-102-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/skyla-boundaries-crossed-bcr-134-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/g-booster-plasma-blast-plb-92-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/plasma-energy-plasma-storm-pls-127-ptcgo-1.png">
+<meta property="og:image" content="https://pkmncards.com/wp-content/uploads/grass-energy-heartgold-soulsilver-hs-115-ptcgo-1.png">
+<meta property="og:updated_time" content="2019-09-16T12:53:55.214Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PTCGO-Legacy卡组介绍——雪虫">
+<meta name="twitter:description" content="卡组预览">
+<meta name="twitter:image" content="http://yoursite.com/images/ptcg/genesect.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/09/15/genesect/"/>
+
+
+
+
+
+  <title>PTCGO-Legacy卡组介绍——雪虫 | 真新镇</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">真新镇</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/15/genesect/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="50er">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/阿童木.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="真新镇">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">PTCGO-Legacy卡组介绍——雪虫</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-15T21:13:23+08:00">
+                2019-09-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PTCG/" itemprop="url" rel="index">
+                    <span itemprop="name">PTCG</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="卡组预览"><a href="#卡组预览" class="headerlink" title="卡组预览"></a>卡组预览</h1><p><img src="\images\ptcg\genesect.png" alt=""><br><a id="more"></a></p>
+<h1 id="卡组评价"><a href="#卡组评价" class="headerlink" title="卡组评价"></a>卡组评价</h1><p>优点：灵活性高，多种充能加速、换位手段，能抗异常状态，攻击强力无视防御，还能抓后场。<br>缺点：强力输出靠唯一一张的ACE SPEC卡：G Booster，怕卡奖励区，也需要及时检索与回收。</p>
+<blockquote>
+<p>整体强度：★★★★★<br>卡组速度：★★★★★<br>操作难度：★★★★<br>稳定程度：★★★★</p>
+</blockquote>
+<h1 id="卡组思路"><a href="#卡组思路" class="headerlink" title="卡组思路"></a>卡组思路</h1><p>运用雪拉比的poke-power一回合多一次的贴草能量和大量的换位手段以及阿克罗玛机器为盖诺赛克特EX加速充能；<br>利用毕力吉翁EX的特性可让盖诺赛克特EX不中异常状态；<br>手贴等离子能量使用盖诺赛克特EX的特性抓取对方后场冠军Pokemon击杀；<br>面对高HP的Pokemon时，运用风露，三忍，junk arm等搜寻G Booster一炮击杀。</p>
+<h1 id="卡牌详解"><a href="#卡牌详解" class="headerlink" title="卡牌详解"></a>卡牌详解</h1><h2 id="Pokemon"><a href="#Pokemon" class="headerlink" title="Pokemon"></a>Pokemon</h2><h3 id="Ditto"><a href="#Ditto" class="headerlink" title="Ditto"></a>Ditto</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/ditto-triumphant-tm-17-ptcgo-1.png" width="35%" height="35%"><br>放1张百变怪控后场，专防比克提尼2能量打100*2弱点秒杀EX。</p>
+</blockquote>
+<h3 id="Smeargle"><a href="#Smeargle" class="headerlink" title="Smeargle"></a>Smeargle</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/smeargle-undaunted-ud-8-ptcgo-1.png" width="35%" height="35%"><br>运用图图犬的poke-power加速滤牌，有skyarrow bridge可在使用poke-power后退下换成盖诺赛克特输出。</p>
+</blockquote>
+<h3 id="Celebi"><a href="#Celebi" class="headerlink" title="Celebi"></a>Celebi</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/celebi-prime-triumphant-tm-92-ptcgo-1.png" width="35%" height="35%"><br>第一加速手，和图图犬一样可skyarrow bridge撤退。</p>
+</blockquote>
+<h3 id="Genesect-EX"><a href="#Genesect-EX" class="headerlink" title="Genesect-EX"></a>Genesect-EX</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/genesect-ex-plasma-blast-plb-11-ptcgo-1.png" width="35%" height="35%"><br>唯一输出手，集抓人和输出于一体，装备G Booster无人能挡。</p>
+</blockquote>
+<h3 id="Virizion-EX"><a href="#Virizion-EX" class="headerlink" title="Virizion-EX"></a>Virizion-EX</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/virizion-ex-plasma-blast-plb-9-ptcgo-1.png" width="35%" height="35%"><br>利用特性保护盖诺赛克特EX不受异常状态，更是天敌九尾的克星。</p>
+</blockquote>
+<h3 id="Jirachi-EX"><a href="#Jirachi-EX" class="headerlink" title="Jirachi-EX"></a>Jirachi-EX</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/jirachi-ex-plasma-blast-plb-60-ptcgo-1.png" width="35%" height="35%"><br>一般用于关键时刻检索风露/三忍找G Booster。</p>
+</blockquote>
+<h3 id="Mr-Mime"><a href="#Mr-Mime" class="headerlink" title="Mr. Mime"></a>Mr. Mime</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/mr.-mime-plasma-freeze-plf-47-ptcgo-1.png" width="35%" height="35%"><br>用于保护后场HP低的时拉比、百变怪、基拉祈EX等。</p>
+</blockquote>
+<h2 id="Trainer"><a href="#Trainer" class="headerlink" title="Trainer"></a>Trainer</h2><h3 id="Bicycle"><a href="#Bicycle" class="headerlink" title="Bicycle"></a>Bicycle</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/bicycle-plasma-storm-pls-117-ptcgo-1.png" width="35%" height="35%"><br>小过牌，偶尔可拼关键牌，也可防N卡手。</p>
+</blockquote>
+<h3 id="Colress-Machine"><a href="#Colress-Machine" class="headerlink" title="Colress Machine"></a>Colress Machine</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/colress-machine-plasma-storm-pls-119-ptcgo-1.png" width="35%" height="35%"><br>用于充能加速盖诺赛克特EX。</p>
+</blockquote>
+<h3 id="Dual-Ball"><a href="#Dual-Ball" class="headerlink" title="Dual Ball"></a>Dual Ball</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/dual-ball-unleashed-ul-72-ptcgo-1.png" width="35%" height="35%"><br>此卡组全为basic Pokemon，dual ball可检索所有Pokemon。</p>
+</blockquote>
+<h3 id="Energy-Retrieval"><a href="#Energy-Retrieval" class="headerlink" title="Energy Retrieval"></a>Energy Retrieval</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/energy-retrieval-black-white-blw-92-ptcgo-1.png" width="35%" height="35%"><br>G Booster攻击需要弃置能量，借此来回收。</p>
+</blockquote>
+<h3 id="Escape-Rope"><a href="#Escape-Rope" class="headerlink" title="Escape Rope"></a>Escape Rope</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/escape-rope-plasma-storm-pls-120-ptcgo-1.png" width="35%" height="35%"><br>换位手段，偶尔弄走对方的幼年Pokemon等难办的对手。</p>
+</blockquote>
+<h3 id="Junk-Arm"><a href="#Junk-Arm" class="headerlink" title="Junk Arm"></a>Junk Arm</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/junk-arm-triumphant-tm-87-ptcgo-1.png" width="35%" height="35%"><br>万能回收手段，也可弃置此局用不到的牌，压缩卡组。</p>
+</blockquote>
+<h3 id="Level-Ball"><a href="#Level-Ball" class="headerlink" title="Level Ball"></a>Level Ball</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/level-ball-next-destinies-nxd-89-ptcgo-1.png" width="35%" height="35%"><br>用于稳定检索时拉比等HP少的Pokemon。</p>
+</blockquote>
+<h3 id="Random-Receiver"><a href="#Random-Receiver" class="headerlink" title="Random Receiver"></a>Random Receiver</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/random-receiver-dark-explorers-dex-99-ptcgo-1.png" width="35%" height="35%"><br>用于检索滤抽，卡手时可用junk arm回收使用。</p>
+</blockquote>
+<h3 id="Super-Rod"><a href="#Super-Rod" class="headerlink" title="Super Rod"></a>Super Rod</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/super-rod-noble-victories-nvi-95-ptcgo-1.png" width="35%" height="35%"><br>一般用于回收盖诺赛克特EX和草能量，偶尔也拉回毕力吉翁EX和百变怪等。</p>
+</blockquote>
+<h3 id="Switch"><a href="#Switch" class="headerlink" title="Switch"></a>Switch</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/switch-heartgold-soulsilver-hs-102-ptcgo-1.png" width="35%" height="35%"><br>换位手段，以此来多使用几次时拉比和图图犬的poke-power来加速。</p>
+</blockquote>
+<h3 id="Tool-Scrapper"><a href="#Tool-Scrapper" class="headerlink" title="Tool Scrapper"></a>Tool Scrapper</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/tool-scrapper-dragons-exalted-drx-116-ptcgo-1.png" width="35%" height="35%"><br>一般用于拆除对方灰尘山的tool或silver mirror，防止特性被封锁或攻击被无效。</p>
+</blockquote>
+<h3 id="Town-Map"><a href="#Town-Map" class="headerlink" title="Town Map"></a>Town Map</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/town-map-boundaries-crossed-bcr-136-ptcgo-1.png" width="35%" height="35%"><br>查看奖励卡，以便G Booster卡奖励里时及时拿出。</p>
+</blockquote>
+<h3 id="Ultra-Ball"><a href="#Ultra-Ball" class="headerlink" title="Ultra Ball"></a>Ultra Ball</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/ultra-ball-dark-explorers-dex-102-ptcgo-1.png" width="35%" height="35%"><br>稳定检索所有Pokemon，顺便弃牌压缩卡组。</p>
+</blockquote>
+<h3 id="Skyarrow-Bridge"><a href="#Skyarrow-Bridge" class="headerlink" title="Skyarrow Bridge"></a>Skyarrow Bridge</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/skyarrow-bridge-next-destinies-nxd-91-ptcgo-1.png" width="35%" height="35%"><br>此卡组所有Pokemon均为basic Pokemon且撤退费用为1，完美适配skyarrow bridge，换位灵活，活用poke-power。</p>
+</blockquote>
+<h3 id="Colress"><a href="#Colress" class="headerlink" title="Colress"></a>Colress</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/colress-plasma-storm-pls-118-ptcgo-1.png" width="35%" height="35%"><br>场上Pokemon多时可大量滤牌，偶尔也可用三忍捡回。</p>
+</blockquote>
+<h3 id="N"><a href="#N" class="headerlink" title="N"></a>N</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/n-noble-victories-nvi-92-ptcgo-1.png" width="35%" height="35%"><br>在场面不利时阻碍对方手牌，同时自身滤牌。</p>
+</blockquote>
+<h3 id="Professor-Juniper"><a href="#Professor-Juniper" class="headerlink" title="Professor Juniper"></a>Professor Juniper</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/professor-juniper-black-white-blw-101-ptcgo-1.png" width="35%" height="35%"><br>大量滤抽，同时弃置不需要的牌。</p>
+</blockquote>
+<h3 id="Professor-Oak’s-New-Theory"><a href="#Professor-Oak’s-New-Theory" class="headerlink" title="Professor Oak’s New Theory"></a>Professor Oak’s New Theory</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/professor-oaks-new-theory-heartgold-soulsilver-hs-101-ptcgo-1.png" width="35%" height="35%"><br>稳定滤抽。</p>
+</blockquote>
+<h3 id="Shadow-Triad"><a href="#Shadow-Triad" class="headerlink" title="Shadow Triad"></a>Shadow Triad</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/shadow-triad-plasma-freeze-plf-102-ptcgo-1.png" width="35%" height="35%"><br>此卡组有很多等离子队的卡，一般可用于回收弃牌堆的G Booster，等离子能量。</p>
+</blockquote>
+<h3 id="Skyla"><a href="#Skyla" class="headerlink" title="Skyla"></a>Skyla</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/skyla-boundaries-crossed-bcr-134-ptcgo-1.png" width="35%" height="35%"><br>一般用于检索G Booster，偶尔也查找其他需要的关键牌。</p>
+</blockquote>
+<h3 id="G-Booster"><a href="#G-Booster" class="headerlink" title="G Booster"></a>G Booster</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/g-booster-plasma-blast-plb-92-ptcgo-1.png" width="35%" height="35%"><br>整套卡组强力输出的核心，作为ACE SPEC只有一张，所以需要很多辅助手段来帮助此卡上手。</p>
+</blockquote>
+<h2 id="Energy"><a href="#Energy" class="headerlink" title="Energy"></a>Energy</h2><h3 id="Plasma-Energy"><a href="#Plasma-Energy" class="headerlink" title="Plasma Energy"></a>Plasma Energy</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/plasma-energy-plasma-storm-pls-127-ptcgo-1.png" width="35%" height="35%"><br>盖诺赛克特EX用于加速和抓后排的必要能量。</p>
+</blockquote>
+<h3 id="Grass-Energy"><a href="#Grass-Energy" class="headerlink" title="Grass Energy"></a>Grass Energy</h3><blockquote>
+<p><img src="https://pkmncards.com/wp-content/uploads/grass-energy-heartgold-soulsilver-hs-115-ptcgo-1.png" width="35%" height="35%"><br>9基本草能量，对应3盖诺赛克特EX*3.</p>
+</blockquote>
+<h1 id="卡组代码"><a href="#卡组代码" class="headerlink" title="卡组代码"></a>卡组代码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">****** Pokémon Trading Card Game Deck List ******</span><br><span class="line"></span><br><span class="line">##Pokémon - 10</span><br><span class="line"></span><br><span class="line">* 1 Ditto TM 17</span><br><span class="line">* 1 Smeargle UD 8</span><br><span class="line">* 2 Celebi TM 92</span><br><span class="line">* 3 Genesect-EX PLB 11</span><br><span class="line">* 1 Virizion-EX PLB 9</span><br><span class="line">* 1 Jirachi-EX PLB 60</span><br><span class="line">* 1 Mr. Mime PLF 47</span><br><span class="line"></span><br><span class="line">##Trainer Cards - 37</span><br><span class="line"></span><br><span class="line">* 2 Switch HS 102</span><br><span class="line">* 1 G Booster PLB 92</span><br><span class="line">* 1 Bicycle PLS 117</span><br><span class="line">* 3 Skyarrow Bridge NXD 91</span><br><span class="line">* 1 Shadow Triad PLF 102</span><br><span class="line">* 2 Ultra Ball DEX 102</span><br><span class="line">* 3 Colress Machine PLS 119</span><br><span class="line">* 3 Professor Oak&apos;s New Theory HS 101</span><br><span class="line">* 1 Super Rod NVI 95</span><br><span class="line">* 1 Escape Rope PLS 120</span><br><span class="line">* 2 Skyla BKT 148</span><br><span class="line">* 1 N NVI 92</span><br><span class="line">* 1 Colress PLS 118</span><br><span class="line">* 1 Town Map BCR 136</span><br><span class="line">* 2 Dual Ball UL 72</span><br><span class="line">* 1 Random Receiver DEX 99</span><br><span class="line">* 3 Professor Juniper BLW 101</span><br><span class="line">* 1 Tool Scrapper DRX 116</span><br><span class="line">* 2 Level Ball NXD 89</span><br><span class="line">* 4 Junk Arm TM 87</span><br><span class="line">* 1 Energy Retrieval BLW 92</span><br><span class="line"></span><br><span class="line">##Energy - 13</span><br><span class="line"></span><br><span class="line">* 9 Grass Energy Energy 1</span><br><span class="line">* 4 Plasma Energy PLS 127</span><br><span class="line"></span><br><span class="line">Total Cards - 60</span><br><span class="line"></span><br><span class="line">****** Deck List Generated by the Pokémon TCG Online www.pokemon.com/TCGO ******</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Pokemon/" rel="tag"><i class="fa fa-tag"></i> Pokemon</a>
+          
+            <a href="/tags/卡牌/" rel="tag"><i class="fa fa-tag"></i> 卡牌</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/23/rayquaza/" rel="next" title="PTCGO-Legacy卡组介绍——烈空电鳗">
+                <i class="fa fa-chevron-left"></i> PTCGO-Legacy卡组介绍——烈空电鳗
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/阿童木.gif"
+                alt="50er" />
+            
+              <p class="site-author-name" itemprop="name">50er</p>
+              <p class="site-description motion-element" itemprop="description">纯白开始的颜色</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://bokjan.com/" target="_blank" title="Bokjan">
+                      
+                        <i class="fa fa-fw fa-address-book"></i>Bokjan</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.rhx1998.win/" target="_blank" title="任前辈">
+                      
+                        <i class="fa fa-fw fa-address-book"></i>任前辈</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://xiaofeng19.cn/" target="_blank" title="大帅鸽">
+                      
+                        <i class="fa fa-fw fa-address-book"></i>大帅鸽</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://ggzero.github.io/" target="_blank" title="Jddy">
+                      
+                        <i class="fa fa-fw fa-address-book"></i>Jddy</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://dmy0u0.cn/" target="_blank" title="董先森">
+                      
+                        <i class="fa fa-fw fa-address-book"></i>董先森</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://zoomdong.site/" target="_blank" title="东佬">
+                      
+                        <i class="fa fa-fw fa-address-book"></i>东佬</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://elatis.cn/" target="_blank" title="源佬">
+                      
+                        <i class="fa fa-fw fa-address-book"></i>源佬</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                学习资料
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://newoj.acmclub.cn/" title="NEUQ OJ" target="_blank">NEUQ OJ</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://vjudge.net/" title="Virtual Judge" target="_blank">Virtual Judge</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://paste.ubuntu.com/" title="Ubuntu Pastebin" target="_blank">Ubuntu Pastebin</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://codeforces.com/" title="Codeforces" target="_blank">Codeforces</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://theme-next.iissnan.com/" title="NexT 使用文档" target="_blank">NexT 使用文档</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.markdown.cn/" title="MarkDown教程" target="_blank">MarkDown教程</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.cplusplus.com/" title="cplusplus.com" target="_blank">cplusplus.com</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#卡组预览"><span class="nav-number">1.</span> <span class="nav-text">卡组预览</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#卡组评价"><span class="nav-number">2.</span> <span class="nav-text">卡组评价</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#卡组思路"><span class="nav-number">3.</span> <span class="nav-text">卡组思路</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#卡牌详解"><span class="nav-number">4.</span> <span class="nav-text">卡牌详解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Pokemon"><span class="nav-number">4.1.</span> <span class="nav-text">Pokemon</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Ditto"><span class="nav-number">4.1.1.</span> <span class="nav-text">Ditto</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Smeargle"><span class="nav-number">4.1.2.</span> <span class="nav-text">Smeargle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Celebi"><span class="nav-number">4.1.3.</span> <span class="nav-text">Celebi</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Genesect-EX"><span class="nav-number">4.1.4.</span> <span class="nav-text">Genesect-EX</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Virizion-EX"><span class="nav-number">4.1.5.</span> <span class="nav-text">Virizion-EX</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jirachi-EX"><span class="nav-number">4.1.6.</span> <span class="nav-text">Jirachi-EX</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mr-Mime"><span class="nav-number">4.1.7.</span> <span class="nav-text">Mr. Mime</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Trainer"><span class="nav-number">4.2.</span> <span class="nav-text">Trainer</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Bicycle"><span class="nav-number">4.2.1.</span> <span class="nav-text">Bicycle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Colress-Machine"><span class="nav-number">4.2.2.</span> <span class="nav-text">Colress Machine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dual-Ball"><span class="nav-number">4.2.3.</span> <span class="nav-text">Dual Ball</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Energy-Retrieval"><span class="nav-number">4.2.4.</span> <span class="nav-text">Energy Retrieval</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Escape-Rope"><span class="nav-number">4.2.5.</span> <span class="nav-text">Escape Rope</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Junk-Arm"><span class="nav-number">4.2.6.</span> <span class="nav-text">Junk Arm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Level-Ball"><span class="nav-number">4.2.7.</span> <span class="nav-text">Level Ball</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Random-Receiver"><span class="nav-number">4.2.8.</span> <span class="nav-text">Random Receiver</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Super-Rod"><span class="nav-number">4.2.9.</span> <span class="nav-text">Super Rod</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Switch"><span class="nav-number">4.2.10.</span> <span class="nav-text">Switch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tool-Scrapper"><span class="nav-number">4.2.11.</span> <span class="nav-text">Tool Scrapper</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Town-Map"><span class="nav-number">4.2.12.</span> <span class="nav-text">Town Map</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ultra-Ball"><span class="nav-number">4.2.13.</span> <span class="nav-text">Ultra Ball</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Skyarrow-Bridge"><span class="nav-number">4.2.14.</span> <span class="nav-text">Skyarrow Bridge</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Colress"><span class="nav-number">4.2.15.</span> <span class="nav-text">Colress</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#N"><span class="nav-number">4.2.16.</span> <span class="nav-text">N</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Professor-Juniper"><span class="nav-number">4.2.17.</span> <span class="nav-text">Professor Juniper</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Professor-Oak’s-New-Theory"><span class="nav-number">4.2.18.</span> <span class="nav-text">Professor Oak’s New Theory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shadow-Triad"><span class="nav-number">4.2.19.</span> <span class="nav-text">Shadow Triad</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Skyla"><span class="nav-number">4.2.20.</span> <span class="nav-text">Skyla</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#G-Booster"><span class="nav-number">4.2.21.</span> <span class="nav-text">G Booster</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Energy"><span class="nav-number">4.3.</span> <span class="nav-text">Energy</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Plasma-Energy"><span class="nav-number">4.3.1.</span> <span class="nav-text">Plasma Energy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Grass-Energy"><span class="nav-number">4.3.2.</span> <span class="nav-text">Grass Energy</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#卡组代码"><span class="nav-number">5.</span> <span class="nav-text">卡组代码</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 1999 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">50er</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
